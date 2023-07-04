@@ -8,7 +8,7 @@ function App() {
         <div className="container">
           <div className="flex flex-col items-center justify-center h-screen">
             <h1 className="text-[#55545C]  text-2xl mb-4">
-              Password Generatorr
+              Password Generatorrr
             </h1>
             <div className="bg-[#24232B] w-96 h-16 mb-4 flex ">
               <h1 className="w-full mt-5">henlo</h1>
