@@ -48,7 +48,7 @@ function App() {
 
   useEffect(
     () => {
-      if(!criterias.uppercase || !criterias.lowercase || !criterias.numbers || !criterias.symbols) setCriterias({ ...criterias, uppercase: true })
+      if(!criterias.uppercase && !criterias.lowercase && !criterias.numbers && !criterias.symbols) setCriterias({ ...criterias, uppercase: true })
     }, [criterias]
   )
 
