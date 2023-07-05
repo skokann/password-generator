@@ -2,7 +2,7 @@ import "./App.css";
 import copy from "./img/copy.svg";
 import RangeSlider from "react-range-slider-input";
 import "react-range-slider-input/dist/style.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   // základní nastavení aplikace při spuštění = výchozí hodnoty pro všechny proměnné v aplikaci.
@@ -26,6 +26,7 @@ function App() {
     let str = "";
     // 2. Podle toho, jaké kritéria jsou zaškrtnuté, přidáme do proměnné str znaky
     // které může heslo obsahovat
+    
     if (criterias.uppercase) str += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     if (criterias.lowercase) str += "abcdefghijklmnopqrstuvwxyz";
     if (criterias.numbers) str += "0123456789";
@@ -44,6 +45,12 @@ function App() {
     }
     setPassword(password);
   }
+
+  useEffect(
+    () => {
+      if(!criterias.uppercase || !criterias.lowercase || !criterias.numbers || !criterias.symbols) setCriterias({ ...criterias, uppercase: true })
+    }, [criterias]
+  )
 
   return (
     <div className="App">
@@ -81,6 +88,7 @@ function App() {
                   type="checkbox"
                   id="scales"
                   name="scales"
+                  defaultChecked={true}
                 />
                 <h1>Include Uppercase Letters</h1>
               </div>
