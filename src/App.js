@@ -6,7 +6,7 @@ import { useState } from "react";
 
 function App() {
   // základní nastavení aplikace při spuštění = výchozí hodnoty pro všechny proměnné v aplikaci.
-  const [password, setPassword] = useState("");
+  const [password, setPassword] = useState("Generate Password");
   const [criterias, setCriterias] = useState({
     uppercase: false,
     lowercase: false,
