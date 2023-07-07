@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+#range-slider {
+  width: auto;
+  margin: auto;
+}
+#range-slider .range-slider__thumb[data-lower] {
+    width: 0;
+}
+#range-slider .range-slider__range {
+    border-radius: 6px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
