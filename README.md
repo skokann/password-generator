@@ -16,19 +16,4 @@ Copy to Clipboard: To conveniently use the generated passwords, users can copy t
 
 **Tailwind CSS:** This project utilizes the Tailwind CSS framework for styling and responsive design. Tailwind CSS provides a utility-first approach, allowing for rapid prototyping and customization of the application's appearance.
 
-**Usage**
-Clone the repository or download the source code files.
-
-Open the index.html file in a web browser.
-
-Use the password generator interface to specify the desired length, character sets, and click the "Generate" button.
-
-The generated password will be displayed on the screen. Click the "Copy" button to copy the password to the clipboard.
-
-Paste the generated password wherever you need a strong and secure password.
-
-**Contributions**
-Contributions to this project are welcome! If you have any ideas for improvements or new features, feel free to fork the repository, make your changes, and submit a pull request. Together, we can make this password generator even more useful and user-friendly.
-
-**License**
-This project is licensed under the MIT License. Feel free to use, modify, and distribute the code for personal and commercial purposes.
+**https://zubryckyj-password-gen.vercel.app/**
